@@ -1,0 +1,36 @@
+/* Light theme variables */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #60a5fa;
+  --background-color: #f9fafb;
+  --text-color: #1f2937;
+  --border-color: #e5e7eb;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+}
+
+/* Dark theme variables */
+[data-theme='dark'] {
+  --primary-color: #60a5fa;
+  --secondary-color: #3b82f6;
+  --background-color: #111827;
+  --text-color: #f9fafb;
+  --border-color: #374151;
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --error-color: #f87171;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ensure Tailwind dark mode classes work properly */
+.dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
